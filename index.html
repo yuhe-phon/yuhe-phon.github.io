@@ -10,6 +10,90 @@
   <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+
+/* ---------- Soft Color Theme ---------- */
+
+:root {
+  --bg: #FAF9F6;
+  --text: #414A4C;
+  --secondary: #747C7D;
+  --accent: #718D95;
+  --heading: #536D74;
+  --border: #E7E8E3;
+  --tag-bg: #EDF2EF;
+  --tag-text: #667F73;
+}
+
+/* Background and text */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Navigation */
+nav {
+  background: rgba(250, 249, 246, 0.96);
+  border-bottom-color: var(--border);
+}
+
+.nav-name,
+.profile-info h1 {
+  color: var(--text);
+}
+
+.nav-links a {
+  color: var(--secondary);
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Profile information */
+.position,
+.advisor,
+.email {
+  color: var(--secondary);
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+
+.social-links a {
+  color: var(--accent);
+}
+
+/* Keep official ORCID green */
+.social-links .orcid-link {
+  color: #A6CE39;
+}
+
+/* Section headings */
+h2 {
+  color: var(--heading);
+  border-bottom-color: var(--border);
+}
+
+/* Research interest tags */
+.interest {
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+}
+
+/* Profile photo shadow */
+.profile-photo {
+  box-shadow: 0 5px 20px rgba(65, 74, 76, 0.07);
+}
+
+/* Footer */
+footer {
+  border-top-color: var(--border);
+  color: #9A9F9C;
+}
+
+  
   <style>
 
     html {
