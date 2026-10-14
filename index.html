@@ -10,7 +10,63 @@
   <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-  <style>
+<style>
+/* ---------- Presentations ---------- */
+
+.presentation-item {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  gap: 22px;
+  padding: 22px 0;
+  border-bottom: 1px solid #E7E8E3;
+}
+
+.presentation-item:last-child {
+  border-bottom: none;
+}
+
+.presentation-year {
+  color: #718D95;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.presentation-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #414A4C;
+  line-height: 1.5;
+  margin-bottom: 7px;
+}
+
+.presentation-authors {
+  font-size: 0.95rem;
+  color: #747C7D;
+  margin-bottom: 4px;
+}
+
+.presentation-conference {
+  font-size: 0.95rem;
+  color: #747C7D;
+}
+
+.presentation-type {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 11px;
+  background: #EDF2EF;
+  color: #667F73;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .presentation-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
 
     html {
       scroll-behavior: smooth;
@@ -412,17 +468,67 @@
 
 
 
-    <!-- Presentations -->
+    
+<!-- Presentations -->
 
-    <section id="presentations">
+<section id="presentations">
 
-      <h2>Presentations</h2>
+  <h2>Presentations</h2>
 
-      <p class="coming-soon">
-        Conference presentations will be added soon.
-      </p>
+  <!-- Presentation 1 -->
+  <div class="presentation-item">
 
-    </section>
+    <div class="presentation-year">2025</div>
+
+    <div class="presentation-content">
+
+      <div class="presentation-title">
+        Incomplete neutralization of r-suffixation in Beijing Mandarin
+      </div>
+
+      <div class="presentation-authors">
+        Yu He & Sang-Im Lee-Kim
+      </div>
+
+      <div class="presentation-conference">
+        <em>Korean Society of Speech Sciences </em> · Seoul, Korea
+      </div>
+
+      <span class="presentation-type">
+        Oral presentation
+      </span>
+
+    </div>
+  </div>
+
+  <!-- Presentation 2 -->
+  <div class="presentation-item">
+
+    <div class="presentation-year">2025</div>
+
+    <div class="presentation-content">
+
+      <div class="presentation-title">
+        Another Presentation Title
+      </div>
+
+      <div class="presentation-authors">
+        Yu He
+      </div>
+
+      <div class="presentation-conference">
+        <em>Conference Name</em> · City, Country
+      </div>
+
+      <span class="presentation-type">
+        Poster presentation
+      </span>
+
+    </div>
+  </div>
+
+</section>
+
 
 
 
